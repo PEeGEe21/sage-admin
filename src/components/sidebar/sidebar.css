@@ -1,0 +1,37 @@
+.logo img {
+    height: 30px;
+}
+
+.sidebar-menu{
+    scroll-behavior: smooth !important;
+}
+
+.metismenu .menu-list-item:hover{
+    background-color: rgba(77, 89, 149, 0.06);
+    transition: 0.3s;
+}
+
+.metismenu .menu-list-item:hover span{
+    color: #5d78ff;
+}
+.metismenu .menu-list-item .sidebar-svg{
+    color: #494b74;
+}
+.metismenu .menu-list-item{
+    transition: 0.3s;
+}
+
+#sidebar-menu ul li a svg{
+    display: inline-block;
+    min-width: 1.8rem;
+    padding-bottom: 0.125em;
+    font-size: 1.1rem;
+    line-height: 1.40625rem;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+/* #sidebar-menu ul li a .sidebar-svg{
+    color: #494b74;
+    color: #6d61ea;
+} */

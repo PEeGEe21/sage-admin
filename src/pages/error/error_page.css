@@ -1,0 +1,23 @@
+.App-header {
+    background-color: #282c34;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-image: url('./../../../public/assets/sm-2.jpg'); */
+    /* height: calc(100vh-50px); */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+  }
+
+.App-header p{
+    margin-top: 20px;
+  }
+
+  

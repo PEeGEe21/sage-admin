@@ -1,0 +1,25 @@
+.loginWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginWrapper input{
+    margin-bottom: 20px;
+}
+
+.loginWrapper label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginWrapper .loginUsernameInput{
+    padding: 10px;
+}
+
+.loginWrapper .loginUPasswordInput{
+    padding: 10px;
+}

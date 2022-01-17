@@ -1,0 +1,21 @@
+.categoryListViewItem{
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.categoryListDeleteItem{
+    color: red;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.categoryListDeleteItem:hover{
+    transition: all 0.3s;
+    background-color: rgba(236, 233, 233, 0.06);
+}
+
+.action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}

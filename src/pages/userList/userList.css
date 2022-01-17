@@ -1,0 +1,47 @@
+.userListUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    text-align: center;
+}
+.userListImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+
+.action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.action-btns .userListEdit{
+    margin-right: 20px ;
+    margin-left: 20px ;
+}
+.action-btns .userListDeleteItem{
+    color: red;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.action-btns .userListDeleteItem:hover{
+    transition: all 0.3s;
+    background-color: rgba(236, 233, 233, 0.06);
+}
+
+
+.btn.btn-label-success {
+    background-color: rgba(10, 187, 135, 0.1);
+    color: #0abb87;
+    cursor: pointer !important;
+}
+.btn.btn-label-success:hover {
+    background-color: #0abb87;
+    color: #ffffff;
+}

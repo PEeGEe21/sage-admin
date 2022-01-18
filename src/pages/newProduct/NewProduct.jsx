@@ -312,7 +312,7 @@ export default function NewProduct() {
                                     <div className="col-md-4 mb-3">
                                         <label htmlFor="cat">Category</label>
                                         <select id="cat" className="form-control" onChange={handleChange} name="category">
-                                        {categories.map((cat)=>{
+                                        {categories && categories.map((cat)=>{
     
                                             return(
                                                 <option key={cat.id} value={cat.name}>{cat.name}</option>

@@ -1,7 +1,28 @@
 import { loginFailure, loginStart, loginSuccess } from "./userRedux"
 import {publicRequest, userRequest} from '../requestMethods'
-import { addProductFailure, addProductStart, addProductSuccess, deleteProductFailure, deleteProductStart, deleteProductSuccess, getProductFailure, getProductStart, getProductSuccess, updateProductFailure, updateProductStart, updateProductSuccess } from "./productRedux";
-import { addCategoryFailure, addCategoryStart, addCategorySuccess, getCategoryFailure, getCategoryStart, getCategorySuccess, updateCategoryFailure, updateCategoryStart, updateCategorySuccess } from "./categoryRedux";
+import { 
+    addProductFailure, 
+    addProductStart, 
+    addProductSuccess, 
+    deleteProductFailure, 
+    deleteProductStart, 
+    deleteProductSuccess, 
+    getProductFailure, 
+    getProductStart, 
+    getProductSuccess, 
+    updateProductFailure, 
+    updateProductStart, 
+    updateProductSuccess } from "./productRedux";
+import { 
+    addCategoryFailure, 
+    addCategoryStart, 
+    addCategorySuccess, 
+    getCategoryFailure, 
+    getCategoryStart, 
+    getCategorySuccess, 
+    updateCategoryFailure, 
+    updateCategoryStart, 
+    updateCategorySuccess } from "./categoryRedux";
 
 export const login = async (dispatch, user) => {
     dispatch(loginStart());

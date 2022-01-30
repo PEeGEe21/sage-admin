@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "https://sage-server.herokuapp.com/";
 const TOKEN ="";
 
 // console.log(JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).refresh)

@@ -11,7 +11,7 @@ function Header() {
             <div className="navbar-header">
 
                 <div className="d-flex align-items-left">
-                    <button type="button" className="  btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                    <button type="button" className=" vertical-menu-btn btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn" >
                         <i className="fa fa-fw fa-bars"></i>
                     </button>
 
@@ -106,7 +106,7 @@ function Header() {
                 {/* <span className="kt-badge kt-badge--dot kt-badge--notify kt-badge--sm kt-badge--brand"></span> */}
         
 								</div>
-								<div className="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg" x-placement="bottom-end" style={{position: 'absolute', willChange: 'transform', top: '0px', left: '0px', transform: 'translate3d(44px, 64px, 0px)'}}>
+								<div className="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg" x-placement="bottom-end" >
 									<form>
 
 										<div className="kt-head kt-head--skin-dark kt-head--fit-x kt-head--fit-b" style={{backgroundImage: 'url(../assets/media/misc/bg-1.jpg)'}}>

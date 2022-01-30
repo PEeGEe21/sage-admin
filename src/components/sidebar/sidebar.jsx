@@ -1,12 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './../style.css'
 import './sidebar.css'
+import cn from 'classnames'
+
 
 export default function SideBar() {
+    const [open, setOpen ] = useState(null)
+
     return (
         <>
-            <div className="vertical-menu">
+        {/* class="enable-vertical-menu" */}
+            {/* <button type="button" className="  btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn" onClick={() => {
+            setOpen(!open); 
+            }}>
+                <i className="fa fa-fw fa-bars"></i>
+            </button> */}
+
+            <div className={cn("vertical-menu", {open})}>
 
                 <div data-simplebar className="h-100">
 

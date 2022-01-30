@@ -16,7 +16,7 @@
 
     function initLeftMenuCollapse() {
         // Left menu collapse
-        $('#vertical-menu-btn').on('click', function () {
+        $('.vertical-menu-btn').on('click', function () {
             $('body').toggleClass('enable-vertical-menu');
         });
 

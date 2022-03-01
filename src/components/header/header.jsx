@@ -1,19 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './../style.css'
 import './header.css'
 import {Add, NotificationsNone} from '@material-ui/icons'
 import {Link} from 'react-router-dom'
 
 function Header() {
+	const handleOpen = () => {
+		console.log("enable-vertical-menu");
+	}
+	const [open, setOpen ] = useState(null)
+	
+			
     return (
         <>
             <header id="page-topbar">
             <div className="navbar-header">
 
                 <div className="d-flex align-items-left">
-                    <button type="button" className=" vertical-menu-btn btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn" >
+                    <button type="button" className="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect" id="demo" >
                         <i className="fa fa-fw fa-bars"></i>
                     </button>
+                    <button type="button" className=" btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn" onClick={() => {setOpen(!open); }}>
+                        <i className="fa fa-fw fa-bars"></i>
+                    </button>
+
 
                     <div className="dropdown d-none d-sm-inline-block show">
                         <button type="button" className="topbar_create_btn btn header-item waves-effect" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

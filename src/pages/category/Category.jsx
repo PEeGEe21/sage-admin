@@ -47,7 +47,7 @@ export default function Category() {
     useEffect(()=>{
         const getProducts = async ()=>{
             try{
-                const res = await axios.get( `http://127.0.0.1:8000/api/products/?category=${categoryName}` );
+                const res = await axios.get( `https://sage-server.herokuapp.com/api/products/?category=${categoryName}` );
                 setProducts(res.data)
 
             }catch(err){}

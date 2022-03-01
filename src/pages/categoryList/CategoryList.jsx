@@ -9,32 +9,32 @@ import { DeleteOutline, VisibilityOutlined } from '@material-ui/icons';
 
 
 export default function CategoryList() {
-    const [category, setCategory] = useState([]);
+    const [categories, setCategories] = useState([]);
 
-    const categories = useSelector((state) => state.category.categories)
+    // const categories = useSelector((state) => state.category.categories)
     const dispatch = useDispatch();
     // console.log(categories)
 
 
-    // useEffect(()=>{
-    //     const getProducts = async ()=>{
-    //         try{
-    //             const res = await axios.get( "http://127.0.0.1:8000/api/products/" );
-    //             setProducts(res.data)
-    //             // console.log(res)
-    //         }catch(err){}
-    //     };
-    //     getProducts()
-    // }, [products])
+    useEffect(()=>{
+        const getCategories = async ()=>{
+            try{
+                const res = await axios.get( "https://sage-server.herokuapp.com/api/category/" );
+                setCategories(res.data)
+                // console.log(res)
+            }catch(err){}
+        };
+        getCategories()
+    }, [categories])
 
     const handleDelete = (id) =>{
         // setCategory(categories.filter((item) => item.id !== id));
         // deleteProduct(id, dispatch)
     }
 
-    useEffect(()=>{
-        getCategories(dispatch)
-    }, [dispatch])
+    // useEffect(()=>{
+    //     getCategories(dispatch)
+    // }, [dispatch])
 
 
     const getCategoryRow = () =>{
